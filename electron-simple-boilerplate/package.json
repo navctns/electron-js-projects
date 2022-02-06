@@ -1,0 +1,15 @@
+{
+  "name": "electron-lego-customizer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Naveen V",
+  "license": "MIT",
+  "scripts": {
+    "start":"electron .",
+    "dev":"nodemon main"
+  },
+  "dependencies": {
+    "electron": "^17.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

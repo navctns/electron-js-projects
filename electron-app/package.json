@@ -1,0 +1,15 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Naveen V",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "electron": "^16.0.8",
+    "nodemon": "^2.0.15"
+  }
+}

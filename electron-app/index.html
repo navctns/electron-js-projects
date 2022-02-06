@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <title>Node Js App</title>
+</head>
+<body>
+    <button onclick="createTextFile()">Create File</button>
+
+    <div class="gr-col-2">
+        <h1>Website Customizer</h1>
+        <a href="/about">About</a>
+        <form action="/quotes" method="POST">
+            <input type="text" placeholder="name" name="name">
+            <input type="text" placeholder="quote" name="quote">
+            <button type="submit">Submit</button>
+          </form>
+          <button id='btn'>create text file</button>
+    </div>
+    <script>
+
+        //     console.log('Hello from Node js');
+        // const fs = require("fs");
+        // const http = require("http");
+    
+        // function createTextFile(){
+        //     fs.writeFileSync('hello1.txt', 'Hello from Node js');
+        //     console.log('Hello from Node js');
+        // }
+        const  { ipcRenderer } = require('electron');
+
+        document.getElementById('btn').onclick = function(){
+            ipcRenderer.send('app:add-text-file');
+            console.log('[message sent]', 'app:add-text-file');
+        }
+
+    
+    </script>
+</body>
+
+</html>

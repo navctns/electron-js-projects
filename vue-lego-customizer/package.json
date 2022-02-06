@@ -1,0 +1,14 @@
+{
+  "name": "vue-lego-customizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Naveen V",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
