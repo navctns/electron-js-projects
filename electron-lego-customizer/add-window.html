@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/coloris.min.css"/>
+</head>
+<body>
+    <h1>Add Item</h1>
+    <form>
+        <div>
+            <label>Enter Color</label>
+            <!-- <input type="text" id="item" autofocus> -->
+            <input type="text" data-coloris autofocus>
+
+        </div>
+        <button type="submit">Add Color</button>
+    </form>
+    <script src="assets/coloris.min.js"></script>
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <!-- <script>
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script> -->
+    <script>
+        // const electron = require('electron');
+        const { ipcRenderer } = require('electron');
+    
+        // const { ipcRenderer } = electron;
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', submitForm);
+
+        function submitForm(e){
+            e.preventDefault();
+            console.log('123');
+        }
+    </script>
+</body>
+</html>
+
+
